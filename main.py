@@ -91,16 +91,40 @@ Label(Detail_entry,text="exang:",font="arial 13",bg=framebg,fg=framefg).place(x=
 def selection():
     if gen.get()==1:
         Gender=1
-        return Gender
+        return (Gender)
         print(Gender)
     elif gen.get()==2:
         Gender=0
+        return (Gender)
+        print(Gender)
+    else:
+        print(Gender)
+
 def selection2():
-    pass
+    if fbs.get()==1:
+        Fbs=0
+        return (Fbs)
+        print(Fbs)
+    elif fbs.get()==2:
+        Fbs=0
+        return (Fbs)
+        print(Fbs)
+    else:
+        print(Fbs)
+
+
 
 def selection3():
-    pass
-
+    if exang.get()==1:
+        Exang=1
+        return (Exang)
+        print(Exang)
+    elif exang.get()==2:
+        Exang=0
+        return (Exang)
+        print(Exang)
+    else:
+        print(Exang)
 
 
 gen= IntVar()
